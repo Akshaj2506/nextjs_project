@@ -33,7 +33,7 @@ const Banner: React.FC<Banner> = ({
         bgImg.onload = () => {
           ctx.clearRect(0, 0, canvas.width, canvas.height);
           ctx.drawImage(bgImg, 0, 0, canvas.width, canvas.height);
-          ctx.font = "30px Arial";
+          ctx.font = "140px Roboto";
           ctx.fillStyle = "black";
           ctx.textAlign = "center";
   
@@ -41,11 +41,11 @@ const Banner: React.FC<Banner> = ({
           ctx.fillText(banner.title, canvas.width / 2, 100);
   
           // Draw the description
-          ctx.font = "20px Arial";
+          ctx.font = "70px Arial";
           ctx.fillText(banner.description, canvas.width / 2, 150);
   
           // Draw the button text
-          ctx.font = "25px Arial";
+          ctx.font = "80px Arial";
           ctx.fillStyle = "white";
           ctx.fillText(banner.buttonText, canvas.width / 2, canvas.height - 50);
         };
